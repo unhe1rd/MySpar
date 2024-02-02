@@ -18,6 +18,7 @@
 		B401A21D2B6D133A0097183F /* SparViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A21C2B6D133A0097183F /* SparViewController.swift */; };
 		B401A21F2B6D135B0097183F /* SparViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A21E2B6D135B0097183F /* SparViewModel.swift */; };
 		B401A2222B6D13890097183F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A2212B6D13890097183F /* TabBarController.swift */; };
+		B401A22C2B6D7F320097183F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A22B2B6D7F320097183F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B401A21C2B6D133A0097183F /* SparViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewController.swift; sourceTree = "<group>"; };
 		B401A21E2B6D135B0097183F /* SparViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewModel.swift; sourceTree = "<group>"; };
 		B401A2212B6D13890097183F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B401A22B2B6D7F320097183F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				B401A21A2B6D13290097183F /* SparProtocols.swift */,
 				B401A21C2B6D133A0097183F /* SparViewController.swift */,
 				B401A21E2B6D135B0097183F /* SparViewModel.swift */,
+				B401A22B2B6D7F320097183F /* Constants.swift */,
 			);
 			path = SparModule;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				B401A2222B6D13890097183F /* TabBarController.swift in Sources */,
 				B401A21B2B6D13290097183F /* SparProtocols.swift in Sources */,
 				B401A21F2B6D135B0097183F /* SparViewModel.swift in Sources */,
+				B401A22C2B6D7F320097183F /* Constants.swift in Sources */,
 				B401A1E22B6D11B80097183F /* AppDelegate.swift in Sources */,
 				B401A1E42B6D11B80097183F /* SceneDelegate.swift in Sources */,
 				B401A1EC2B6D11B80097183F /* MySpar.xcdatamodeld in Sources */,

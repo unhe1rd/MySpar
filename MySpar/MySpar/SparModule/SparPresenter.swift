@@ -32,14 +32,14 @@ private extension SparPresenter {
         let data: SparViewModel = .init(
             productImage: productImage,
             countryImage: countryImage,
-            countryLabel: "Чай Чёрный Golden Tips Assam 100г",
+            countryLabel: "Северная Индия, Ассам",
             descriptionLabel: "Изысканная смесь самого высококачественного ассамского чая, выращенного на знаменитых плантациях, обеспечивает непревзойденный аромат и богатый вкус. Этот чай пробуждает чувства и окутывает утонченным послевкусием, призванным удовлетворить самых взыскательных ценителей чая. Наслаждайтесь этим непревзойденным чаем в уединении или в компании близких, и каждая чашка станет незабываемым ритуалом в вашей жизни.",
-            productionCountryLabel: "Северная Индия (Ассам)",
             energyValueLabel: "25 ккал, 105 кДж",
             fatsLabel: "0,1 г",
             proteinsLabel: "1,5 г",
             carbLabel: "3,2 г",
-            productTextLabel: "Чай Чёрный Golden Tips Assam 100г")
+            productTextLabel: "Чай Чёрный Golden Tips Assam 100г", 
+            ratingLabel: "4.1 | 19 отзывов")
         
         view?.configure(with: data)
     }

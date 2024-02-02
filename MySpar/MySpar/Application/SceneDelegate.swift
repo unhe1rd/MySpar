@@ -18,12 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
                
         let authVC = TabBarController()
-        
+
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: authVC)
+        window?.rootViewController = authVC
         window?.makeKeyAndVisible()
-        
-        
+    
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
