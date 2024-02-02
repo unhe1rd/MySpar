@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B401A1E22B6D11B80097183F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A1E12B6D11B80097183F /* AppDelegate.swift */; };
+		B401A1E42B6D11B80097183F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A1E32B6D11B80097183F /* SceneDelegate.swift */; };
+		B401A1EC2B6D11B80097183F /* MySpar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B401A1EA2B6D11B80097183F /* MySpar.xcdatamodeld */; };
+		B401A1EE2B6D11BE0097183F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B401A1ED2B6D11BE0097183F /* Assets.xcassets */; };
+		B401A1F12B6D11BE0097183F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B401A1EF2B6D11BE0097183F /* LaunchScreen.storyboard */; };
+		B401A2172B6D12F30097183F /* SparAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A2162B6D12F30097183F /* SparAssembly.swift */; };
+		B401A2192B6D131A0097183F /* SparPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A2182B6D131A0097183F /* SparPresenter.swift */; };
+		B401A21B2B6D13290097183F /* SparProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A21A2B6D13290097183F /* SparProtocols.swift */; };
+		B401A21D2B6D133A0097183F /* SparViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A21C2B6D133A0097183F /* SparViewController.swift */; };
+		B401A21F2B6D135B0097183F /* SparViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A21E2B6D135B0097183F /* SparViewModel.swift */; };
+		B401A2222B6D13890097183F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A2212B6D13890097183F /* TabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B401A1F82B6D11BE0097183F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B401A1D62B6D11B80097183F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B401A1DD2B6D11B80097183F;
+			remoteInfo = MySpar;
+		};
+		B401A2022B6D11BE0097183F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B401A1D62B6D11B80097183F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B401A1DD2B6D11B80097183F;
+			remoteInfo = MySpar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B401A1DE2B6D11B80097183F /* MySpar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B401A1E12B6D11B80097183F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B401A1E32B6D11B80097183F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B401A1EB2B6D11B80097183F /* MySpar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySpar.xcdatamodel; sourceTree = "<group>"; };
+		B401A1ED2B6D11BE0097183F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B401A1F02B6D11BE0097183F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B401A1F22B6D11BE0097183F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B401A1F72B6D11BE0097183F /* MySparTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySparTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B401A2012B6D11BE0097183F /* MySparUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySparUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B401A2162B6D12F30097183F /* SparAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparAssembly.swift; sourceTree = "<group>"; };
+		B401A2182B6D131A0097183F /* SparPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparPresenter.swift; sourceTree = "<group>"; };
+		B401A21A2B6D13290097183F /* SparProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparProtocols.swift; sourceTree = "<group>"; };
+		B401A21C2B6D133A0097183F /* SparViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewController.swift; sourceTree = "<group>"; };
+		B401A21E2B6D135B0097183F /* SparViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewModel.swift; sourceTree = "<group>"; };
+		B401A2212B6D13890097183F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B401A1DB2B6D11B80097183F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1F42B6D11BE0097183F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1FE2B6D11BE0097183F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B401A1D52B6D11B80097183F = {
+			isa = PBXGroup;
+			children = (
+				B401A1E02B6D11B80097183F /* MySpar */,
+				B401A1DF2B6D11B80097183F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B401A1DF2B6D11B80097183F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B401A1DE2B6D11B80097183F /* MySpar.app */,
+				B401A1F72B6D11BE0097183F /* MySparTests.xctest */,
+				B401A2012B6D11BE0097183F /* MySparUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401A1E02B6D11B80097183F /* MySpar */ = {
+			isa = PBXGroup;
+			children = (
+				B401A2142B6D12800097183F /* Application */,
+				B401A2152B6D12BC0097183F /* SparModule */,
+				B401A2202B6D13730097183F /* TabBar */,
+				B401A1ED2B6D11BE0097183F /* Assets.xcassets */,
+				B401A1EF2B6D11BE0097183F /* LaunchScreen.storyboard */,
+				B401A1F22B6D11BE0097183F /* Info.plist */,
+				B401A1EA2B6D11B80097183F /* MySpar.xcdatamodeld */,
+			);
+			path = MySpar;
+			sourceTree = "<group>";
+		};
+		B401A2142B6D12800097183F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B401A1E12B6D11B80097183F /* AppDelegate.swift */,
+				B401A1E32B6D11B80097183F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B401A2152B6D12BC0097183F /* SparModule */ = {
+			isa = PBXGroup;
+			children = (
+				B401A2162B6D12F30097183F /* SparAssembly.swift */,
+				B401A2182B6D131A0097183F /* SparPresenter.swift */,
+				B401A21A2B6D13290097183F /* SparProtocols.swift */,
+				B401A21C2B6D133A0097183F /* SparViewController.swift */,
+				B401A21E2B6D135B0097183F /* SparViewModel.swift */,
+			);
+			path = SparModule;
+			sourceTree = "<group>";
+		};
+		B401A2202B6D13730097183F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B401A2212B6D13890097183F /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B401A1DD2B6D11B80097183F /* MySpar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B401A20B2B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySpar" */;
+			buildPhases = (
+				B401A1DA2B6D11B80097183F /* Sources */,
+				B401A1DB2B6D11B80097183F /* Frameworks */,
+				B401A1DC2B6D11B80097183F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySpar;
+			productName = MySpar;
+			productReference = B401A1DE2B6D11B80097183F /* MySpar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B401A1F62B6D11BE0097183F /* MySparTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B401A20E2B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySparTests" */;
+			buildPhases = (
+				B401A1F32B6D11BE0097183F /* Sources */,
+				B401A1F42B6D11BE0097183F /* Frameworks */,
+				B401A1F52B6D11BE0097183F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B401A1F92B6D11BE0097183F /* PBXTargetDependency */,
+			);
+			name = MySparTests;
+			productName = MySparTests;
+			productReference = B401A1F72B6D11BE0097183F /* MySparTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B401A2002B6D11BE0097183F /* MySparUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B401A2112B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySparUITests" */;
+			buildPhases = (
+				B401A1FD2B6D11BE0097183F /* Sources */,
+				B401A1FE2B6D11BE0097183F /* Frameworks */,
+				B401A1FF2B6D11BE0097183F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B401A2032B6D11BE0097183F /* PBXTargetDependency */,
+			);
+			name = MySparUITests;
+			productName = MySparUITests;
+			productReference = B401A2012B6D11BE0097183F /* MySparUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B401A1D62B6D11B80097183F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B401A1DD2B6D11B80097183F = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					B401A1F62B6D11BE0097183F = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B401A1DD2B6D11B80097183F;
+					};
+					B401A2002B6D11BE0097183F = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = B401A1DD2B6D11B80097183F;
+					};
+				};
+			};
+			buildConfigurationList = B401A1D92B6D11B80097183F /* Build configuration list for PBXProject "MySpar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B401A1D52B6D11B80097183F;
+			productRefGroup = B401A1DF2B6D11B80097183F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B401A1DD2B6D11B80097183F /* MySpar */,
+				B401A1F62B6D11BE0097183F /* MySparTests */,
+				B401A2002B6D11BE0097183F /* MySparUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B401A1DC2B6D11B80097183F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B401A1F12B6D11BE0097183F /* LaunchScreen.storyboard in Resources */,
+				B401A1EE2B6D11BE0097183F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1F52B6D11BE0097183F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1FF2B6D11BE0097183F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B401A1DA2B6D11B80097183F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B401A21D2B6D133A0097183F /* SparViewController.swift in Sources */,
+				B401A2192B6D131A0097183F /* SparPresenter.swift in Sources */,
+				B401A2222B6D13890097183F /* TabBarController.swift in Sources */,
+				B401A21B2B6D13290097183F /* SparProtocols.swift in Sources */,
+				B401A21F2B6D135B0097183F /* SparViewModel.swift in Sources */,
+				B401A1E22B6D11B80097183F /* AppDelegate.swift in Sources */,
+				B401A1E42B6D11B80097183F /* SceneDelegate.swift in Sources */,
+				B401A1EC2B6D11B80097183F /* MySpar.xcdatamodeld in Sources */,
+				B401A2172B6D12F30097183F /* SparAssembly.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1F32B6D11BE0097183F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B401A1FD2B6D11BE0097183F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B401A1F92B6D11BE0097183F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B401A1DD2B6D11B80097183F /* MySpar */;
+			targetProxy = B401A1F82B6D11BE0097183F /* PBXContainerItemProxy */;
+		};
+		B401A2032B6D11BE0097183F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B401A1DD2B6D11B80097183F /* MySpar */;
+			targetProxy = B401A2022B6D11BE0097183F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B401A1EF2B6D11BE0097183F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B401A1F02B6D11BE0097183F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B401A2092B6D11BE0097183F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B401A20A2B6D11BE0097183F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B401A20C2B6D11BE0097183F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MySpar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySpar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B401A20D2B6D11BE0097183F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MySpar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySpar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B401A20F2B6D11BE0097183F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySparTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySpar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySpar";
+			};
+			name = Debug;
+		};
+		B401A2102B6D11BE0097183F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySparTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MySpar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MySpar";
+			};
+			name = Release;
+		};
+		B401A2122B6D11BE0097183F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySparUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySpar;
+			};
+			name = Debug;
+		};
+		B401A2132B6D11BE0097183F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TGA6X3S6V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VkEdTeam.MySparUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySpar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B401A1D92B6D11B80097183F /* Build configuration list for PBXProject "MySpar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B401A2092B6D11BE0097183F /* Debug */,
+				B401A20A2B6D11BE0097183F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B401A20B2B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySpar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B401A20C2B6D11BE0097183F /* Debug */,
+				B401A20D2B6D11BE0097183F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B401A20E2B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySparTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B401A20F2B6D11BE0097183F /* Debug */,
+				B401A2102B6D11BE0097183F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B401A2112B6D11BE0097183F /* Build configuration list for PBXNativeTarget "MySparUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B401A2122B6D11BE0097183F /* Debug */,
+				B401A2132B6D11BE0097183F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B401A1EA2B6D11B80097183F /* MySpar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B401A1EB2B6D11B80097183F /* MySpar.xcdatamodel */,
+			);
+			currentVersion = B401A1EB2B6D11B80097183F /* MySpar.xcdatamodel */;
+			path = MySpar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B401A1D62B6D11B80097183F /* Project object */;
+}
