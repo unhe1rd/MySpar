@@ -51,7 +51,7 @@
 		B401A2162B6D12F30097183F /* SparAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparAssembly.swift; sourceTree = "<group>"; };
 		B401A2182B6D131A0097183F /* SparPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparPresenter.swift; sourceTree = "<group>"; };
 		B401A21A2B6D13290097183F /* SparProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparProtocols.swift; sourceTree = "<group>"; };
-		B401A21C2B6D133A0097183F /* SparViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewController.swift; sourceTree = "<group>"; };
+		B401A21C2B6D133A0097183F /* SparViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B401A21E2B6D135B0097183F /* SparViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparViewModel.swift; sourceTree = "<group>"; };
 		B401A2212B6D13890097183F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B401A22B2B6D7F320097183F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };

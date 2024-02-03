@@ -39,7 +39,9 @@ private extension SparPresenter {
             proteinsLabel: "1,5 г",
             carbLabel: "3,2 г",
             productTextLabel: "Чай Чёрный Golden Tips Assam 100г", 
-            ratingLabel: "4.1 | 19 отзывов")
+            ratingLabel: "4.1 | 19 отзывов",
+            produsedByLabel: "Россия, Москва",
+            reviewsCount: "Всe 228")
         
         view?.configure(with: data)
     }

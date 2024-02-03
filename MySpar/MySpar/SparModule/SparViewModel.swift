@@ -18,10 +18,14 @@ struct SparViewModel {
     let proteinsLabel: String
     let carbLabel: String
     let ratingLabel: String
+    let produsedByLabel: String
+    let reviewsCount: String
     var productImage = UIImage()
     var countryImage = UIImage()
     
-    init(productImage: UIImage,countryImage: UIImage, countryLabel: String, descriptionLabel: String, energyValueLabel: String,fatsLabel: String,proteinsLabel: String,carbLabel: String, productTextLabel: String, ratingLabel: String) {
+    
+    
+    init(productImage: UIImage,countryImage: UIImage, countryLabel: String, descriptionLabel: String, energyValueLabel: String,fatsLabel: String,proteinsLabel: String,carbLabel: String, productTextLabel: String, ratingLabel: String, produsedByLabel: String, reviewsCount: String) {
         self.productImage = productImage
         self.countryImage = countryImage
         self.countryLabel = countryLabel
@@ -32,6 +36,8 @@ struct SparViewModel {
         self.carbLabel = carbLabel
         self.productTextLabel = productTextLabel
         self.ratingLabel = ratingLabel
+        self.produsedByLabel = produsedByLabel
+        self.reviewsCount = reviewsCount
     }
     
 }
