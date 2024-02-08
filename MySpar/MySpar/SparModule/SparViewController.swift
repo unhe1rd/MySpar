@@ -14,6 +14,15 @@ final class SparViewController: UIViewController, UITabBarDelegate {
     var model: SparViewModel?
     let scrollView = UIScrollView()
     let containerView = UIView()
+    
+    private var reviews: [ReviewCellModel] = []
+    
+    private let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        return UICollectionView(frame: .zero, collectionViewLayout: layout)
+    }()
+    
     let productImage = UIImageView()
     let starImage = UIImageView()
     let tagImage = UIImageView()
@@ -75,13 +84,13 @@ final class SparViewController: UIViewController, UITabBarDelegate {
         setupAllSpecificationsLabel()
         setupMainReviewsLabel()
         setupReviewsCountLabel()
-        
+        setupCollectionView()
         setupReviewButton()
+        
         setupBuyButton()
         setupCartButton()
         
         setupNavigationBar()
-        
     }
     
     init(output: SparViewOutput) {
@@ -470,6 +479,23 @@ extension SparViewController{
         ])
     }
     
+    func setupCollectionView() {
+        containerView.addSubview(collectionView)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ReviewCell.self, forCellWithReuseIdentifier: "ReviewCell")
+        collectionView.backgroundColor = .white
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+                
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: reviewsCountLabel.topAnchor, constant: 24),
+            collectionView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 0),
+            collectionView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: 0),
+            collectionView.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
+    
     func setupReviewButton() {
         containerView.addSubview(reviewButton)
         reviewButton.translatesAutoresizingMaskIntoConstraints = false
@@ -482,7 +508,7 @@ extension SparViewController{
         reviewButton.layer.borderWidth = 2 // Толщина границы
         reviewButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         NSLayoutConstraint.activate([
-            reviewButton.topAnchor.constraint(equalTo: reviewsCountLabel.topAnchor, constant: 24),
+            reviewButton.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 24),
             reviewButton.heightAnchor.constraint(equalToConstant: 32),
             reviewButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             reviewButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
@@ -524,10 +550,11 @@ extension SparViewController{
             cartButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
         ])
     }
+    
 }
 
 extension SparViewController: SparViewInput{
-    func configure(with model: SparViewModel) {
+    func configure(with model: SparViewModel, with review: [ReviewCellModel]) {
         // mockData
         productImage.image = model.productImage
         ratingLabel.text = model.ratingLabel
@@ -541,6 +568,8 @@ extension SparViewController: SparViewInput{
         proteinsLabel.text = model.proteinsLabel
         carbLabel.text = model.carbLabel
         reviewsCountLabel.text = model.reviewsCount
+        
+        reviews = review
     }
 }
 
@@ -553,5 +582,41 @@ extension SparViewController {
 }
 
 extension SparViewController: UIScrollViewDelegate {
+    
+}
+
+extension SparViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ReviewCell", for: indexPath) as! ReviewCell
+        cell.configure(with: reviews[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        numberOfItemsInSection section: Int
+    ) -> Int {
+        return reviews.count
+    }
+}
+
+
+extension SparViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellWidth = collectionView.frame.width * 0.7
+        let cellHeight = collectionView.frame.height - 20
+        
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 8)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
+    }
     
 }

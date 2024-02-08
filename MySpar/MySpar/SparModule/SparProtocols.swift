@@ -16,7 +16,7 @@ protocol SparModuleOutput: AnyObject {
 }
 
 protocol SparViewInput: AnyObject {
-    func configure(with model: SparViewModel)
+    func configure(with model: SparViewModel, with review: [ReviewCellModel])
 }
 
 protocol SparViewOutput: AnyObject {
