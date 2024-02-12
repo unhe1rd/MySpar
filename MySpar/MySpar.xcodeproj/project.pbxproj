@@ -21,6 +21,7 @@
 		B401A22C2B6D7F320097183F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B401A22B2B6D7F320097183F /* Constants.swift */; };
 		B46188E82B74DB07009DFB0E /* ReviewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46188E72B74DB07009DFB0E /* ReviewCellModel.swift */; };
 		B46188EB2B74E175009DFB0E /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46188EA2B74E175009DFB0E /* ReviewCell.swift */; };
+		B46188EF2B79F53D009DFB0E /* ContainerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46188EE2B79F53D009DFB0E /* ContainerUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B401A22B2B6D7F320097183F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B46188E72B74DB07009DFB0E /* ReviewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellModel.swift; sourceTree = "<group>"; };
 		B46188EA2B74E175009DFB0E /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		B46188EE2B79F53D009DFB0E /* ContainerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				B401A2182B6D131A0097183F /* SparPresenter.swift */,
 				B401A21A2B6D13290097183F /* SparProtocols.swift */,
 				B401A21C2B6D133A0097183F /* SparViewController.swift */,
+				B46188EE2B79F53D009DFB0E /* ContainerUIView.swift */,
 				B401A22B2B6D7F320097183F /* Constants.swift */,
 			);
 			path = SparModule;
@@ -300,6 +303,7 @@
 				B46188EB2B74E175009DFB0E /* ReviewCell.swift in Sources */,
 				B401A2192B6D131A0097183F /* SparPresenter.swift in Sources */,
 				B401A2222B6D13890097183F /* TabBarController.swift in Sources */,
+				B46188EF2B79F53D009DFB0E /* ContainerUIView.swift in Sources */,
 				B401A21B2B6D13290097183F /* SparProtocols.swift in Sources */,
 				B401A21F2B6D135B0097183F /* SparViewModel.swift in Sources */,
 				B46188E82B74DB07009DFB0E /* ReviewCellModel.swift in Sources */,

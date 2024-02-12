@@ -18,4 +18,14 @@ final class SparAssembly {
 
         return viewController
     }
+    
+    static func subassembly(moduleOutput: SparModuleOutput? = nil) -> UIViewController {
+        let presenter = SparPresenter()
+        let viewController = ContainerUIView(output: presenter)
+
+        presenter.view = viewController
+        presenter.moduleOutput = moduleOutput
+
+        return viewController
+    }
 }

@@ -42,7 +42,7 @@ private extension TabBarController {
         sparVC.tabBarItem.image = UIImage(systemName: "arrow.up.heart.fill")
         sparVC.tabBarItem.tag = 1
         
-        let catalogVC = UIViewController()
+        let catalogVC = SparAssembly.subassembly()
         catalogVC.tabBarItem.title = "Каталог"
         catalogVC.tabBarItem.image = UIImage(systemName: "chart.bar.doc.horizontal")
         catalogVC.tabBarItem.tag = 2
